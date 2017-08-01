@@ -83,7 +83,7 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="QmW-1p-sIj">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="QmW-1p-sIj" customClass="WeatherCell" customModule="WeatherApp">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QmW-1p-sIj" id="Q4x-0a-PL7">
@@ -149,6 +149,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="Fpk-ZM-Y9E" id="odC-k1-WRh"/>
+                                            <outlet property="highTemp" destination="VKF-cU-q1M" id="vgo-OJ-cxc"/>
+                                            <outlet property="lowTemp" destination="sNA-Og-Vfu" id="occ-Iy-PNA"/>
+                                            <outlet property="weatherIcon" destination="5YN-3Q-Dgp" id="9uc-AZ-aXy"/>
+                                            <outlet property="weatherType" destination="TCS-Uq-Myo" id="gJU-Wg-UkF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

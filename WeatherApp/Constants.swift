@@ -18,3 +18,4 @@ let API_KEY = "295a2a800def02df7077e0569516ee9b"
 typealias DownloadComplete = () -> ()
 
 let CURRENT_WEATHER_URL = "\(BASE_URL)\(CITY)\(APP_ID)\(API_KEY)"
+let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Austin,us&mode=json&appid=295a2a800def02df7077e0569516ee9b"
